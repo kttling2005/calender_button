@@ -74,7 +74,7 @@ class _TapPandaState extends State<TapPanda> {
           width: 180,
           child: Material(
             color: const Color.fromARGB(255, 210, 209, 209),
-            borderRadius: BorderRadius.circular(120),
+            // borderRadius: BorderRadius.circular(120),
             child: InkWell(
               onTap:
                   () => setState(() {
