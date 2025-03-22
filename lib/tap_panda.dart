@@ -74,10 +74,10 @@ class _TapPandaState extends State<TapPanda> {
           width: 180,
           decoration: BoxDecoration(
             color: const Color.fromARGB(255, 210, 209, 209),
-            borderRadius: BorderRadius.circular(120),
+            borderRadius: BorderRadius.circular(100),
           ),
           child: InkWell(
-            borderRadius: BorderRadius.circular(120),
+            borderRadius: BorderRadius.circular(100),
             onTap:
                 () => setState(() {
                   s = (Random().nextInt(7));
