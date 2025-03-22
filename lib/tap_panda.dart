@@ -76,6 +76,8 @@ class _TapPandaState extends State<TapPanda> {
             color: const Color.fromARGB(255, 210, 209, 209),
             borderRadius: BorderRadius.circular(120),
           ),
+          child: Material(
+            borderRadius: BorderRadius.circular(120),
           child: InkWell(
             onTap:
                 () => setState(() {
@@ -98,6 +100,7 @@ class _TapPandaState extends State<TapPanda> {
               ],
             ),
           ),
+          )
         ),
       ],
     );
