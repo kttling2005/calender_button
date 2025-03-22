@@ -77,6 +77,7 @@ class _TapPandaState extends State<TapPanda> {
             borderRadius: BorderRadius.circular(120),
           ),
           child: InkWell(
+            borderRadius: BorderRadius.circular(120),
             onTap:
                 () => setState(() {
                   s = (Random().nextInt(7));
