@@ -61,7 +61,7 @@ class _TapPandaState extends State<TapPanda> {
     return Column(
       children: [
         SizedBox(
-          height: 90, //layout anh ngu bo me
+          height: 90, 
           child: CalendarTask(
             timeline: events[s]["time"],
             title: events[s]["title"],
