@@ -68,39 +68,36 @@ class _TapPandaState extends State<TapPanda> {
             desc: events[s]["description"],
           ),
         ),
-        SizedBox(height: 200,),
+        SizedBox(height: 200),
         Container(
           height: 180,
           width: 180,
-          decoration: BoxDecoration(
+          child: Material(
             color: const Color.fromARGB(255, 210, 209, 209),
             borderRadius: BorderRadius.circular(120),
-          ),
-          child: Material(
-            borderRadius: BorderRadius.circular(120),
-          child: InkWell(
-            onTap:
-                () => setState(() {
-                  s = (Random().nextInt(7));
-                }),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  widget.text1,
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                ),
-                Container(
-                  height: 120,
-                  width: 120,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(image: AssetImage(widget.image)),
+            child: InkWell(
+              onTap:
+                  () => setState(() {
+                    s = (Random().nextInt(7));
+                  }),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    widget.text1,
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                   ),
-                ),
-              ],
+                  Container(
+                    height: 120,
+                    width: 120,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(image: AssetImage(widget.image)),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
-          )
         ),
       ],
     );
