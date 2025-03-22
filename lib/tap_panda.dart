@@ -96,7 +96,7 @@ class _TapPandaState extends State<TapPanda> {
                     image: DecorationImage(image: AssetImage(widget.image)),
                   ),
                 ),
-              ],
+               ],
             ),
           ),
         ),
