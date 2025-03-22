@@ -112,7 +112,7 @@ class CalendarTask extends StatelessWidget {
     required this.timeline,
     required this.title,
     required this.desc,
-  });
+  } );
 
   @override
   Widget build(BuildContext context) {
